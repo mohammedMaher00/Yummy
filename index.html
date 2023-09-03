@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./asstes/img/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./asstes/css/all.min.css">
+<link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+<link rel="stylesheet" href="./asstes/css/style.css">
+
+
+
+</head>
+<body class=" bg-black">
+    
+
+<section  id="sidebar"
+class="position-fixed top-0 bottom-0 bg-danger d-flex text-white ">
+    <div class=" bg-black  sidebar-inner d-flex flex-column justify-content-between">
+        <ul class="list-unstyled p-4 d-flex flex-column gap-3">
+            <li  class=" position-relative " style="top: 300px;"><a id="searchBtn" href="#search">Search</a></li>
+            <li class=" position-relative " style="top: 300px;"><a id="CategoryhBtn" href="#categories">Categories</a></li>
+            <li class=" position-relative " style="top: 300px;"><a id="AreaBtn" href="#Area">Area</a></li>
+            <li class=" position-relative " style="top: 300px;"><a id="ingrediantsBtn" href="#ingrediants">Ingredients</a></li>
+            <li class=" position-relative " style="top: 300px;"> <a id="contactBtn" href="#contact-us">Contact Us</a></li>
+        </ul>
+        <div class="sidebarcontact p-4">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <p class="">Copyright Â© 2019 All Rights <br>
+                Reserved.</p>
+        </div>
+    </div>
+    
+    <div class=" h-100   sidebar-icons bg-white d-flex flex-column justify-content-between p-2 align-items-center">
+        <a href=""><img  class="logo py-4 " src="./asstes/img/logo.png" alt=""></a>
+         
+        <i class="close-icon fa-solid fa-2x fa-x d-none" style="color: #000000;"></i>
+        <i class="bar-icon fa-solid fa-bars fa-2x " style="color: #000000;"></i>
+
+        <div class="d-flex flex-column gap-1 py-4">
+            <i class="fa-solid fa-globe" style="color: #000000;"></i>
+            <i class="fa-solid fa-share-nodes" style="color: #000000;"></i>
+        </div>
+    </div>
+</section>
+<!-- ******* -->
+<section class="mt-5 d-none searchSection" id="search ">
+   <div class="container">
+    <div class="row">
+    
+     
+   <div class="offset-2  offset-md-0  col-10 col-md-6"><input id="searchName" type="search" placeholder=" Search by Name" class="form-control"></div>
+   <div class="offset-2 offset-md-0 col-10 col-md-6 mt-2 mt-md-0"> <input id="searchByLetter" type="text" placeholder="Search by Letter" class="form-control mt-sm-2 mt-md-0" maxlength="1">
+    <p class="alert alert-danger d-none searchFLetter mt-2">enter only one english letter</p>
+</div>
+ 
+  
+    </div>
+    <div id="searchRow" class="row g-4 mt-5">
+        
+      
+    </div>
+   </div>
+</section>
+<!-- ******** -->
+<section class="mt-5 d-none"  id="categories">
+    <div class="container">
+        <div id="categeoryRow" class="row g-4">
+
+
+          
+        </div>
+        
+        <div id="mealsOfCate" class="row g-4 d-none">
+          
+            
+        </div>
+        
+        
+        
+        </div>
+</section>
+
+<!-- ******* -->
+<section class="mt-5 d-none" id="Area"> <div class="container">
+    <div id="areaRow" class=" row justify-content-center align-items-center ">
+     
+      
+    </div>
+    <div id="stateRow" class="row g-4 d-none">
+
+    </div>
+    
+    
+    
+    
+    
+    </div>
+</section>
+<!-- ******* -->
+
+<section class="mt-5 d-none " id="ingrediants"> <div class="container">
+    <div id="ingrediantsRow" class="row g-4">
+        
+        
+      
+    </div>
+    <div id="ingrediantsMeals" class="row  d-none g-4 "></div>
+    
+    
+    
+    
+    
+    </div>
+</section>
+<!-- ****** -->
+<section class=" d-flex justify-content-center align-items-center d-none "  id="contact-us">
+    <div class="container text-center">
+        <div class="row ">
+            <div class="offset-2 offset-md-0 col-10 col-md-6 d-flex flex-column gap-3">
+                <input ` id="nameIput" type="text" placeholder="Enter Your Name" class="form-control ">
+                <p  class="alert alert-danger d-none chechName">Please Entar a Valid Name</p>
+                <input id="phoneInput" type="text" placeholder=" Enter Your Phone" class="form-control" >
+                <p class="alert alert-danger d-none checkPhone">Please Entar a Valid Phone Number</p>
+                <input id="passInput" type="password" placeholder=" Enter your Password" class="form-control">
+                <p class="alert alert-danger d-none checkPass">Please Entar a Valid Password</p>
+            </div>
+            <div class="offset-2 offset-md-0 col-10 col-md-6 d-flex flex-column mt-3 mt-md-0 gap-3">
+               
+                <input id="emailInput"  type="email" placeholder="Enter Your Email" class="form-control">
+                <p class="alert alert-danger d-none checkEmail">Please Entar a Valid Email</p>
+                
+                <input id="ageInput" type="number" placeholder=" Enter Your Age" class="form-control">
+                <p class="alert alert-danger d-none chechAge">Please Entar a Valid Age</p>
+                
+                <input   id="repassInput " type="password" placeholder=" Enter your Re-password" class="form-control repassinput">
+                <p class="alert alert-danger d-none checkMatchedPass">Not Matched</p>
+            </div>
+            
+        </div>
+        <button id="submitBtn" class="btn btn-outline-danger mt-3 submitBtn  disabled "  >submit</button>
+    </div>
+</section>
+<!-- ***** -->
+<section class="mt-5 text-white d-none" id="detalis">
+    <div class="container">
+        <div id="detalisRow" class="row">
+          
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <main id="homeSection" class="my-5 ">
+<div class="container">
+<div id="rowData" class="row g-4">
+    
+  
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+    </main>
+
+    <!-- <section id="loading" class="d-flex justify-content-center align-items-center d-none">
+        <div  class="lds-grid   "><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+    </section>
+     -->
+
+
+
+
+
+
+
+
+
+
+<section id="loading" class="d-flex justify-content-center align-items-center d-none">
+    <span class="loader"></span>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./asstes/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="./asstes/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="./asstes/js/main.js"></script>
+
+
+</body>
+</html>

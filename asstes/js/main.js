@@ -171,7 +171,7 @@ async function searchByName(mealName){
        loading.classList.remove('d-none')
 
 
-    let response= await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=')
+    let response= await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
     let data=await response.json()
     loading.classList.add('d-none')
         let allData= data.meals
